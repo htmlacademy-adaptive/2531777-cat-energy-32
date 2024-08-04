@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Екатерина Смаглюк](https://up.htmlacademy.ru/adaptive/32/user/2531777).
-* Наставник: [Антон Варнавский] (https://github.com/Ekaterina-SMAG/2531777-cat-energy-32/tree/module1-task1).
+* Наставник: [Антон Варнавский] (https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
