@@ -1,0 +1,11 @@
+.product {}
+
+.product__item {}
+
+.product__property {
+  @include text-card;
+}
+
+.product__value {
+  @include text-card;
+}

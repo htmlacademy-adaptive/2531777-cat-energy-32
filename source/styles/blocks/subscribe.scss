@@ -1,0 +1,25 @@
+.subscribe {}
+
+.subscribe__title {
+  @include digitally;
+}
+
+.subscribe__description {
+  @include subscribe;
+}
+
+.subscribe__form {
+
+}
+
+.subscribe__label {}
+
+.subscribe__text {
+  width: 180px;
+  height: 56px;
+}
+
+.subscribe__button {
+  @include button;
+  height: 56px;
+}

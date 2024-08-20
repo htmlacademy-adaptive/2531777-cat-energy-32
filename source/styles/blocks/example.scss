@@ -3,11 +3,11 @@
 }
 
 .example__title {
-
+  @include title-secondary;
 }
 
 .example__description {
-
+  @include description-secondary;
 }
 
 .example__list {
@@ -19,11 +19,11 @@
 }
 
 .example__digitally {
-
+  @include digitally;
 }
 
 .example__result {
-
+  @include result;
 }
 
 .example__costs {

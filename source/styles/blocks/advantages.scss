@@ -3,7 +3,7 @@
 }
 
 .advantages__title {
-
+  @include title-secondary;
 }
 
 .advantages__list {
@@ -19,7 +19,7 @@
 }
 
 .advantages__description {
-
+  @include description-secondary;
 }
 
 .advantages__item--powder {

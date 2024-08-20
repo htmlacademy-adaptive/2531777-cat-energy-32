@@ -3,17 +3,29 @@
 }
 
 .hero--background {
-
+  background-color: rgba(104, 183, 56, 0.85);
+  min-width: 320px;
+  min-height: 302px;
 }
 
 .hero__index {
-
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $color-hero;
 }
 
 .hero__description {
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $color-hero;
+  text-transform: uppercase;
 }
 
 .hero__button {
-
+  @include button;
 }

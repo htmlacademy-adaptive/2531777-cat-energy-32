@@ -7,15 +7,14 @@
 }
 
 .contacts__title {
-
+  @include contacts__title;
 }
 
 .contacts__address {
-
+  @include contacts__address;
 }
 
 .contacts__map {
 
 }
-
 

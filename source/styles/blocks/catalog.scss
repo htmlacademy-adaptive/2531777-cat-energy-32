@@ -1,0 +1,10 @@
+.catalog {
+}
+
+.catalog__title {
+  @include catalog__title;
+}
+
+.catalog__list {}
+
+.catalog__card {}

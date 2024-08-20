@@ -1,0 +1,15 @@
+.item-more {}
+
+.item-more__title {
+  @include item-more__title;
+}
+
+.item-more__description {
+  @include item-more__description;
+}
+
+.item-more__sum {}
+
+.item-more__button {
+  @include button;
+}

@@ -1,0 +1,10 @@
+.more {}
+
+.more__title {
+  @include digitally;
+  text-transform: uppercase;
+}
+
+.more__list {}
+
+.more__item {}
