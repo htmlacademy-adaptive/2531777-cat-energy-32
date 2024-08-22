@@ -9,21 +9,12 @@
 }
 
 .hero__index {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include text-primary ( $secondary-font, 36px, 36px, 400, $color-hero, none);
   text-align: center;
-  color: $color-hero;
 }
 
 .hero__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: $color-hero;
-  text-transform: uppercase;
+  @include text-primary ( $secondary-font, 14px, 14px, 400, $color-hero, uppercase);
 }
 
 .hero__button {

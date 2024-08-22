@@ -3,11 +3,11 @@
 }
 
 .example__title {
-  @include title-secondary;
+  @include text-primary ($secondary-font, 36px, 40px, $primary-font-weight, rgba(0, 0, 0, 1), uppercase);
 }
 
 .example__description {
-  @include description-secondary;
+  @include text-primary ($primary-font, 14px, 18px, $primary-font-weight, rgba(68, 68, 68, 1), none);
 }
 
 .example__list {
@@ -19,11 +19,11 @@
 }
 
 .example__digitally {
-  @include digitally;
+  @include text-primary ($secondary-font, 24px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
 }
 
 .example__result {
-  @include result;
+  @include text-primary ($primary-font, 12px, 12px, $primary-font-weight, rgba(68, 68, 68, 1), none);
 }
 
 .example__costs {

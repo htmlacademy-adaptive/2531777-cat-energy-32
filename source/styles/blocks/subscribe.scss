@@ -1,11 +1,11 @@
 .subscribe {}
 
 .subscribe__title {
-  @include digitally;
+  @include text-primary ($secondary-font, 24px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
 }
 
 .subscribe__description {
-  @include subscribe;
+  @include text-primary ($secondary-font, 16px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
 }
 
 .subscribe__form {

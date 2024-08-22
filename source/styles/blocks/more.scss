@@ -1,10 +1,11 @@
 .more {}
 
 .more__title {
-  @include digitally;
-  text-transform: uppercase;
+  @include text-primary ($secondary-font, 24px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), uppercase);
 }
 
-.more__list {}
+.more__list {
+  list-style: none;
+}
 
 .more__item {}

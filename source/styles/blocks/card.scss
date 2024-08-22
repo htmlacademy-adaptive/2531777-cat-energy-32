@@ -5,7 +5,7 @@
 }
 
 .card__title {
-  @include card__title;
+  @include text-primary ($secondary-font, 16px, 20px, $primary-font-weight, rgba(34, 34, 34, 1), uppercase);
 }
 
 .card__picture {}
@@ -25,5 +25,5 @@
 }
 
 .card__description {
-  @include text-card;
+  @include text-primary ($primary-font, 12px, 16px, $primary-font-weight, rgba(68, 68, 68, 1), none);
 }

@@ -1,11 +1,11 @@
 .item-more {}
 
 .item-more__title {
-  @include item-more__title;
+  @include text-primary ($secondary-font, 16px, 16px, $primary-font-weight, rgba(34, 34, 34, 1), uppercase);
 }
 
 .item-more__description {
-  @include item-more__description;
+  @include text-primary ($primary-font, 14px, 14px, $primary-font-weight, rgba(68, 68, 68, 1), none);
 }
 
 .item-more__sum {}

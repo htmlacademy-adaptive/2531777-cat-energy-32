@@ -3,6 +3,5 @@
 }
 
 .costs__sum {
-  @include costs__sum;
+  @include text-primary ($secondary-font, 14px, 20px, $primary-font-weight,  rgba(17, 17, 17, 1), uppercase);
 }
-
