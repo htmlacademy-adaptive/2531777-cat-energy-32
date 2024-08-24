@@ -1,4 +1,6 @@
-.subscribe {}
+.subscribe {
+
+}
 
 .subscribe__title {
   @include text-primary ($secondary-font, 24px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
@@ -12,7 +14,9 @@
 
 }
 
-.subscribe__label {}
+.subscribe__label {
+
+}
 
 .subscribe__text {
   width: 180px;

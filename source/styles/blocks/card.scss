@@ -1,4 +1,6 @@
-.card {}
+.card {
+
+}
 
 .card__link {
   text-decoration: none;
@@ -8,11 +10,17 @@
   @include text-primary ($secondary-font, 16px, 20px, $primary-font-weight, rgba(34, 34, 34, 1), uppercase);
 }
 
-.card__picture {}
+.card__picture {
 
-.card__foto {}
+}
 
-.card__product {}
+.card__foto {
+
+}
+
+.card__product {
+
+}
 
 .card__button {
   @include button;
