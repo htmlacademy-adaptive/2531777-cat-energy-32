@@ -1,0 +1,22 @@
+.hero {
+
+}
+
+.hero--background {
+  background-color: rgba(104, 183, 56, 0.85);
+  min-width: 320px;
+  min-height: 302px;
+}
+
+.hero__index {
+  @include text-primary ( $secondary-font, 36px, 36px, 400, $color-hero, none);
+  text-align: center;
+}
+
+.hero__description {
+  @include text-primary ( $secondary-font, 14px, 14px, 400, $color-hero, uppercase);
+}
+
+.hero__button {
+  @include button;
+}

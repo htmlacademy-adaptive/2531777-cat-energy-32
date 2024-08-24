@@ -1,0 +1,15 @@
+.product {
+  list-style: none;
+}
+
+.product__item {
+
+}
+
+.product__property {
+  @include text-primary ($primary-font, 12px, 16px, $primary-font-weight, rgba(68, 68, 68, 1), none);
+}
+
+.product__value {
+  @include text-primary ($primary-font, 12px, 16px, $primary-font-weight, rgba(68, 68, 68, 1), none);
+}

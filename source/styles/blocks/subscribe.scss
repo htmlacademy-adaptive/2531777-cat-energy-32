@@ -1,0 +1,29 @@
+.subscribe {
+
+}
+
+.subscribe__title {
+  @include text-primary ($secondary-font, 24px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
+}
+
+.subscribe__description {
+  @include text-primary ($secondary-font, 16px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
+}
+
+.subscribe__form {
+
+}
+
+.subscribe__label {
+
+}
+
+.subscribe__text {
+  width: 180px;
+  height: 56px;
+}
+
+.subscribe__button {
+  @include button;
+  height: 56px;
+}

@@ -1,0 +1,37 @@
+.card {
+
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  @include text-primary ($secondary-font, 16px, 20px, $primary-font-weight, rgba(34, 34, 34, 1), uppercase);
+}
+
+.card__picture {
+
+}
+
+.card__foto {
+
+}
+
+.card__product {
+
+}
+
+.card__button {
+  @include button;
+}
+
+.card-button__all {
+  @include button;
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(68, 68, 68, 1);
+}
+
+.card__description {
+  @include text-primary ($primary-font, 12px, 16px, $primary-font-weight, rgba(68, 68, 68, 1), none);
+}

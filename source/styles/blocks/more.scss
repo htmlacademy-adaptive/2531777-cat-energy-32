@@ -1,0 +1,11 @@
+.more {}
+
+.more__title {
+  @include text-primary ($secondary-font, 24px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), uppercase);
+}
+
+.more__list {
+  list-style: none;
+}
+
+.more__item {}

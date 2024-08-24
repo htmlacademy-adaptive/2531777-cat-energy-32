@@ -1,0 +1,20 @@
+.contacts {
+
+}
+
+.contacts__wrapper {
+
+}
+
+.contacts__title {
+  @include text-primary ($secondary-font, 16px, 20px, $primary-font-weight, rgba(17, 17, 17, 1), uppercase);
+}
+
+.contacts__address {
+  @include text-primary ($primary-font, 14px, 20px, $primary-font-weight, rgba(68, 68, 68, 1), none);
+}
+
+.contacts__map {
+
+}
+

@@ -1,0 +1,17 @@
+.present {
+  padding-left: 58px;
+  padding-right: 62px;
+  padding-top: 186px;
+}
+
+.present--background {
+  height: 290px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.present__description {
+  @include text-primary ($primary-font, 16px, 20px, $primary-font-weight, rgba(255, 255, 255, 1), none);
+  text-align: center;
+}
+
+.present__description--gift {}
