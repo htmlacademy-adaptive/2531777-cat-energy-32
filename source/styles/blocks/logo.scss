@@ -1,5 +1,15 @@
-.logo__img {
+.logo {
+  display: flex;
+}
 
+.logo__img {
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .logo__text {

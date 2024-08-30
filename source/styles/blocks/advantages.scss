@@ -7,15 +7,30 @@
 }
 
 .advantages__list {
-
+  list-style: none;
 }
 
 .advantages__item {
-
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(104, 183, 56, 1);
+  }
 }
 
 .advantages__item--naturally {
-
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    padding-top: 14px;
+    padding-left: 15px;
+    background-size: 30px 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__description {
@@ -23,14 +38,43 @@
 }
 
 .advantages__item--powder {
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#icon-colb");
+    padding-top: 14px;
+    padding-left: 15px;
+    background-size: 30px 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 
 }
 
 .advantages__item--functionally {
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#icon_eat");
+    padding-top: 14px;
+    padding-left: 15px;
+    background-size: 30px 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 
 }
 
 .advantages__item--time {
-
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#icon-time");
+    padding-top: 14px;
+    padding-left: 15px;
+    background-size: 30px 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
 

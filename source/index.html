@@ -9,10 +9,12 @@
   <link rel="icon" href="favicon.ico" size="32x32">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="/manifest.json">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
+
   <header class="header">
     <a class="header__logo logo" href="#">
       <picture>
@@ -29,6 +31,7 @@
     <nav class="nav">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
+        <img src="../../icons/stack.svg#header-button-mobile" width="24" height="24" alt="Открыть меню">
       </button>
       <div class="nav__wrapper">
         <ul class="nav__list header-list">
@@ -52,12 +55,12 @@
     <section class="main__hero hero hero--background">
       <h2 class="hero__index">Функциональное питание для котиков</h2>
       <p class="hero__description">Занялся собой? Займись котом!</p>
-      <button class="hero__button" type="button">Подобрать программу</button>
       <picture>
         <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="../images/index-main-desktop@1x.png 1x, ../images/index-main-desktop@2x.png 2x">
         <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="../images/index-main-tablet@1x.png 1x, ../images/index-main-tablet@2x.png 2x">
         <img src="../images/index-main-mobile@1x.png" srcset="../images/index-main-mobile@2x.png 2x" width="280" height="270" alt="Банка продукта Кэт энерджи с курицей 500 грамм">
       </picture>
+      <button class="hero__button" type="button">Подобрать программу</button>
     </section>
 
     <section class="main__profit profit">
@@ -158,32 +161,35 @@
 
   <footer class="footer">
     <a class="footer__logo" href="#">
-      <img src="#" width="100" height="100" alt="Кэт Энерджи">
+      <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Кэт Энерджи">
     </a>
 
     <ul class="footer__social social">
       <li class="social__item social__item--vk">
         <a class="social__link" href="#">
           <span class="visually-hidden">Cat Energy VKontakte</span>
+          <img src="../../icons/stack.svg#icon-vk" width="27" height="17" alt="Переход на страницу компании во Вконтакте">
         </a>
       </li>
 
       <li class="social__item social__item--yt">
         <a class="social__link" href="#">
           <span class="visually-hidden">Cat Energy YouTube</span>
+          <img src="../../icons/stack.svg#icon-yt" width="28" height="22" alt="Переход на страницу компании на Ютюб">
         </a>
       </li>
 
       <li class="social__item social__item--tg">
         <a class="social__link" href="#">
           <span class="visually-hidden">Cat Energy Telegram</span>
+          <img src="../../icons/stack.svg#icon-tg" width="28" height="22" alt="Переход на страницу компании в Телеграм">
         </a>
       </li>
     </ul>
 
     <a class="footer__copyright copyright" href="#">
-      <span class="copyright__title">HTML Academy"</span>
-      <img class="copyright__logo" src="../images/HTML_Academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
+      <img class="copyright__title" src="../../icons/stack.svg#HTML_Academy-text" width="113" height="20" alt="Переход на страницу компании HTML Academy">
+      <img class="copyright__logo" src="../../icons/stack.svg#HTML_Academy-logo" width="27" height="34" alt="Логотип HTML Academy">
     </a>
 
   </footer>

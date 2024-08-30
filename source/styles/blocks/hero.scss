@@ -6,6 +6,12 @@
   background-color: rgba(104, 183, 56, 0.85);
   min-width: 320px;
   min-height: 302px;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("")
+  }
 }
 
 .hero__index {
