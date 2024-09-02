@@ -3,7 +3,20 @@
 }
 
 .footer__logo {
+  display: block;
+  mask-image: url("../../icons/stack.svg#logo-text");
+  background-color: rgba(17, 17, 17, 1);
+  width: 128px;
+  height: 24px;
 
+
+  &:hover {
+    background-color: rgba(62, 62, 62, 1);
+  }
+
+  &:active {
+    background-color: rgba(107, 107, 107, 1);
+  }
 }
 
 .footer__social {

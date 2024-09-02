@@ -16,4 +16,5 @@
 
 .item-more__button {
   @include button;
+  border-color: transparent;
 }

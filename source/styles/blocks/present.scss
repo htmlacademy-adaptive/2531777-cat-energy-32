@@ -1,7 +1,11 @@
 .present {
-  padding-left: 58px;
-  padding-right: 62px;
-  padding-top: 186px;
+  &::before {
+    @include pseudo (78px,80px);
+    mask-image: url("../../icons/stack.svg#icon_gift");
+    background-color: rgba(255, 255, 255, 1);
+    mask-repeat: no-repeat;
+    mask-position: 101px 59px;
+  }
 }
 
 .present--background {
@@ -12,6 +16,11 @@
 .present__description {
   @include text-primary ($primary-font, 16px, 20px, $primary-font-weight, rgba(255, 255, 255, 1), none);
   text-align: center;
+  padding-left: 58px;
+  padding-right: 62px;
+  padding-top: 186px;
 }
 
-.present__description--gift {}
+.present__description--gift {
+
+}

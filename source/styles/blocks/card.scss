@@ -7,7 +7,16 @@
 }
 
 .card__title {
+  position: relative;
+}
+
+.card__plus {
   @include text-primary ($secondary-font, 16px, 20px, $primary-font-weight, rgba(34, 34, 34, 1), uppercase);
+
+  &::before {
+    @include pseudo (30px,30px);
+    background-image: url("../../icons/stack.svg#plus");
+  }
 }
 
 .card__picture {
@@ -24,6 +33,16 @@
 
 .card__button {
   @include button;
+  display: block;
+  border-color: transparent;
+
+  &:hover {
+    background-color: rgba(94, 170, 47, 1);
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .card-button__all {

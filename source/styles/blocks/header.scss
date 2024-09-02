@@ -1,8 +1,29 @@
 .header {
+  @include flex;
   background-color: #ffffff;
   position: relative;
 }
 
 .header__logo {
+  height: 38px;
+  padding-top: 13px;
+  padding-left: 20px;
+  padding-right: 21px;
 
+  @media (min-width: $tablet-width) {
+    height: 50px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
+}
+
+.header-list {
+  @media (min-width: $tablet-width) {
+    width: 570px;
+  }
 }

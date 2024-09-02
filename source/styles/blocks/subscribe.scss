@@ -26,4 +26,5 @@
 .subscribe__button {
   @include button;
   height: 56px;
+  border-color: transparent;
 }

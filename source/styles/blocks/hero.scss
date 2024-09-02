@@ -4,13 +4,9 @@
 
 .hero--background {
   background-color: rgba(104, 183, 56, 0.85);
-  min-width: 320px;
-  min-height: 302px;
 
   &::before {
-    content: "";
-    display: block;
-    background-image: url("")
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50% transparent 50%, url("../../images/index-background-mobile@1x.png") center cover no-repeat);
   }
 }
 
@@ -25,4 +21,13 @@
 
 .hero__button {
   @include button;
+  border-color: transparent;
+
+  &:hover {
+    background-color: rgba(94, 170, 47, 1);
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }

@@ -10,6 +10,7 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -29,7 +30,7 @@
       </picture>
     </a>
     <nav class="nav">
-      <button class="nav__toggle" type="button">
+      <button class="nav__toggle header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
         <img src="../../icons/stack.svg#header-button-mobile" width="24" height="24" alt="Открыть меню">
       </button>
@@ -161,35 +162,36 @@
 
   <footer class="footer">
     <a class="footer__logo" href="#">
-      <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Кэт Энерджи">
+      <span class="visually-hidden">Переход на главную</span>
     </a>
 
     <ul class="footer__social social">
       <li class="social__item social__item--vk">
         <a class="social__link" href="#">
           <span class="visually-hidden">Cat Energy VKontakte</span>
-          <img src="../../icons/stack.svg#icon-vk" width="27" height="17" alt="Переход на страницу компании во Вконтакте">
         </a>
       </li>
 
       <li class="social__item social__item--yt">
         <a class="social__link" href="#">
           <span class="visually-hidden">Cat Energy YouTube</span>
-          <img src="../../icons/stack.svg#icon-yt" width="28" height="22" alt="Переход на страницу компании на Ютюб">
         </a>
       </li>
 
       <li class="social__item social__item--tg">
         <a class="social__link" href="#">
           <span class="visually-hidden">Cat Energy Telegram</span>
-          <img src="../../icons/stack.svg#icon-tg" width="28" height="22" alt="Переход на страницу компании в Телеграм">
         </a>
       </li>
     </ul>
 
     <a class="footer__copyright copyright" href="#">
-      <img class="copyright__title" src="../../icons/stack.svg#HTML_Academy-text" width="113" height="20" alt="Переход на страницу компании HTML Academy">
-      <img class="copyright__logo" src="../../icons/stack.svg#HTML_Academy-logo" width="27" height="34" alt="Логотип HTML Academy">
+      <p class="copyright__title">
+        <span class="visually-hidden">"Переход на страницу компании HTML Academy"</span>
+      </p>
+      <p class="copyright__logo">
+        <span class="visually-hidden">"Логотип HTML Academy"</span>
+      </p>
     </a>
 
   </footer>
