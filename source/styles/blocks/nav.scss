@@ -9,6 +9,10 @@
   position: absolute;
   left: 275px;
   top: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__wrapper {
@@ -18,10 +22,32 @@
     width: 436px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+    margin-right: 110px;
+    margin-top: 57px;
+    width: 475px;
+  }
 }
 
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 436px;
+    margin-top: 14px;
+    margin-right: 34px;
+
+    @include text-primary ($secondary-font, 18px, 24px, $primary-font, rgba(0, 0, 0, 1), uppercase);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    height: 40px;
+  }
 }

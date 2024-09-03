@@ -4,24 +4,63 @@
 
 .hero--background {
   background-color: rgba(104, 183, 56, 0.85);
+  height: 302px;
+  position: relative;
 
-  &::before {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50% transparent 50%, url("../../images/index-background-mobile@1x.png") center cover no-repeat);
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    height: 650px;
   }
 }
 
 .hero__index {
-  @include text-primary ( $secondary-font, 36px, 36px, 400, $color-hero, none);
+  @include text-primary ($secondary-font, 35px, 36px, 400, $color-hero, none);
   text-align: center;
+  width: 249px;
+  padding-top: 27px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    @include text-primary ($secondary-font, 59px, 60px, 400, rgba(0, 0, 0, 1), none);
+    width: 414px;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 65px;
+  }
 }
 
 .hero__description {
-  @include text-primary ( $secondary-font, 14px, 14px, 400, $color-hero, uppercase);
+  @include text-primary ($secondary-font, 14px, 14px, 400, $color-hero, uppercase);
+  margin-top: 25px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-primary ($secondary-font, 20px, 20px, 400, rgba(0, 0, 0, 1), uppercase);
+    width: 414px;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 40px;
+    position: relative;
+  }
+}
+
+.hero__picture {
+  margin-top: 29px;
+  margin-left: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-top: 21px;
+  }
 }
 
 .hero__button {
   @include button;
   border-color: transparent;
+  margin-top: 3px;
+  margin-left: 20px;
+
 
   &:hover {
     background-color: rgba(94, 170, 47, 1);
@@ -29,5 +68,16 @@
 
   &:active {
     opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    height: 54px;
+    display: block;
+    position: absolute;
+    top: 260px;
+    left: 130px;
   }
 }

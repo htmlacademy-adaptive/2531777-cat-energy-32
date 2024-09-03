@@ -3,27 +3,40 @@
 }
 
 .example__title {
-  @include text-primary ($secondary-font, 36px, 40px, $primary-font-weight, rgba(0, 0, 0, 1), uppercase);
+  @include text-primary ($secondary-font, 36px, 40px, $primary-font-weight, rgba(0, 0, 0, 1), none);
+  text-align: center;
+  margin: 20px;
+  padding-top: 25px;
 }
 
 .example__description {
   @include text-primary ($primary-font, 14px, 18px, $primary-font-weight, rgba(68, 68, 68, 1), none);
+  margin: 20px;
 }
 
 .example__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around;
 
 }
 
 .example__item {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .example__digitally {
   @include text-primary ($secondary-font, 24px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
+
 }
 
 .example__result {
   @include text-primary ($primary-font, 12px, 12px, $primary-font-weight, rgba(68, 68, 68, 1), none);
+  justify-content: center;
 }
 
 .example__costs {
