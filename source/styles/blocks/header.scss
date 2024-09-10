@@ -5,10 +5,8 @@
 }
 
 .header__logo {
+  margin: 13px 21px 15px 20px;
   height: 38px;
-  margin-top: 13px;
-  margin-left: 20px;
-  margin-right: 21px;
 
   @media (min-width: $tablet-width) {
     height: 50px;
@@ -26,6 +24,16 @@
 
 .header-list {
   & a {
+    @include text-primary ($secondary-font, 20px, 20px, $primary-font, rgba(0, 0, 0, 1), uppercase);
+    text-decoration: none;
+    border-top: 1px solid rgba(230, 230, 230, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 66px;
+    justify-content: center;
+
     @media (min-width: $tablet-width) {
       @include text-primary ($secondary-font, 18px, 24px, $primary-font, rgba(0, 0, 0, 1), uppercase);
       text-decoration: none;

@@ -1,9 +1,17 @@
 .item-more {
-
+  &:last-child::before {
+    content: "";
+    width: 280px;
+    height: 2px;
+    background-color: rgba(235, 235, 235, 1);
+    position: absolute;
+    top: 117px;
+  }
 }
 
 .item-more__title {
   @include text-primary ($secondary-font, 16px, 16px, $primary-font-weight, rgba(34, 34, 34, 1), uppercase);
+  margin: 0 0 13px;
 }
 
 .item-more__description {
@@ -11,7 +19,7 @@
 }
 
 .item-more__sum {
-
+  @include text-primary ($primary-font, 14px, 14px, $primary-font-weight, rgba(68, 68, 68, 1), none);
 }
 
 .item-more__button {

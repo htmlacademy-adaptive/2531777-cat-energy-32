@@ -1,20 +1,30 @@
 .contacts {
   background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .contacts__wrapper {
-
+  display: flex;
+  flex-direction: row;
+  padding: 26px 20px;
 }
 
 .contacts__title {
   @include text-primary ($secondary-font, 16px, 20px, $primary-font-weight, rgba(17, 17, 17, 1), uppercase);
+  width: 140px;
+  height: 60px;
 }
 
 .contacts__address {
   @include text-primary ($primary-font, 14px, 20px, $primary-font-weight, rgba(68, 68, 68, 1), none);
+  width: 140px;
+  height: 60px;
 }
 
 .contacts__map {
-
+  width: 100%;
 }
 

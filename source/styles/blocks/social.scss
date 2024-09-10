@@ -1,5 +1,25 @@
 .social {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: -75px;
+    height: 2px;
+    width: 280px;
+    background-color: rgba(217, 217, 217, 1);
+  }
 
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -75px;
+    height: 2px;
+    width: 280px;
+    background-color: rgba(217, 217, 217, 1);
+  }
 }
 
 .social__item {
@@ -44,8 +64,6 @@
     background-color: rgba(104, 183, 56, 1);
     opacity: 30%;
   }
-
-
 }
 
 .social__item--tg {
@@ -64,6 +82,5 @@
     background-color: rgba(104, 183, 56, 1);
     opacity: 30%;
   }
-
 }
 

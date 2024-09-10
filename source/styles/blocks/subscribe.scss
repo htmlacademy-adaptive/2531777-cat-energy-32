@@ -1,16 +1,33 @@
 .subscribe {
-
+  width: 320px;
+  padding: 0 20px;
 }
 
 .subscribe__title {
   @include text-primary ($secondary-font, 24px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
+  margin-top: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #68b738;
+    width: 108px;
+    height: 2px;
+    position: absolute;
+    top: 12px;
+    left: 192px;
+  }
 }
 
 .subscribe__description {
   @include text-primary ($secondary-font, 16px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
+  width: 280px;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .subscribe__form {
+  width: 280px;
 
 }
 
@@ -19,12 +36,16 @@
 }
 
 .subscribe__text {
-  width: 180px;
+  @include text-primary ($secondary-font, 20px, 30px, $primary-font-weight, rgba(0, 0, 0, 1), uppercase);
+  width: 280px;
   height: 56px;
+  border: 1px solid rgba(205, 205, 205, 1);
+  margin-bottom: 16px;
 }
 
 .subscribe__button {
   @include button;
   height: 56px;
   border-color: transparent;
+  margin-bottom: 40px;
 }

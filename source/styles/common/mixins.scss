@@ -24,16 +24,16 @@
   text-align: center;
   background-color: $primary-color-button;
   color: $color-hero;
-  width: 280px;
-  height: 40px;
+  min-width: 280px;
+  min-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 10px 0;
 }
 
 @mixin flex ($direction:row,$justify:space-between,$align:center) {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: $direction;
+  flex-flow: $direction wrap;
   justify-content: $justify;
   align-items: $align;
 }
