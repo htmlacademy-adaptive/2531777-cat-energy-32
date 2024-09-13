@@ -33,20 +33,17 @@
     width: 320px;
     height: 66px;
     justify-content: center;
-
-    @media (min-width: $tablet-width) {
-      @include text-primary ($secondary-font, 18px, 24px, $primary-font, rgba(0, 0, 0, 1), uppercase);
-      text-decoration: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      @include text-primary ($secondary-font, 20px, 30px, $primary-font, rgba(255, 255, 255, 1), uppercase);
-    }
   }
 
   @media (min-width: $tablet-width) {
+    @include text-primary ($secondary-font, 18px, 24px, $primary-font, rgba(0, 0, 0, 1), uppercase);
+    text-decoration: none;
     width: 436px;
     height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-primary ($secondary-font, 20px, 30px, $primary-font, rgba(255, 255, 255, 1), uppercase);
   }
 }
 

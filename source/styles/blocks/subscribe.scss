@@ -28,7 +28,6 @@
 
 .subscribe__form {
   width: 280px;
-
 }
 
 .subscribe__label {
@@ -41,10 +40,13 @@
   height: 56px;
   border: 1px solid rgba(205, 205, 205, 1);
   margin-bottom: 16px;
+  padding: 13px;
 }
 
 .subscribe__button {
   @include button;
+  font-size: 20px;
+  line-height: 26px;
   height: 56px;
   border-color: transparent;
   margin-bottom: 40px;

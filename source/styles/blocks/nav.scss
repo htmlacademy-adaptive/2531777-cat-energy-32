@@ -1,6 +1,5 @@
 .nav {
   width: auto;
-  min-height: 198px;
 }
 
 .nav__toggle {
@@ -13,11 +12,8 @@
   left: 275px;
   top: 20px;
   cursor: pointer;
-
-  &:hover,
-  &:active {
-
-  }
+  width: 24px;
+  height: 24px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -27,8 +23,8 @@
 .nav--closed .nav__toggle::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 6px;
+  top: 1px;
+  left: -1px;
   width: 24px;
   height: 2px;
   background-color: rgba(0, 0, 0, 1);
@@ -36,15 +32,36 @@
 }
 
 .nav--closed .nav__toggle:active::before {
-  background-color: opacify(rgba(0, 0, 0, 1), 0.3);
+  background-color: rgba(0, 0, 0, 1);
   box-shadow:
-    0 8px 0 0 opacify(rgba(0, 0, 0, 1), 0.3),
-    0 16px 0 0 opacify(rgba(0, 0, 0, 1), 0.3);
+    0 8px 0 0 rgba(0, 0, 0, 1),
+    0 16px 0 0 rgba(0, 0, 0, 1);
 }
 
 @media (max-width: $mobile-width-only) {
-  .nav--closed .header-list__item {
+  .nav--closed .header-list {
     display: none;
+  }
+
+  .nav--opened .nav__wrapper {
+    position: absolute;
+    top: 66;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+
+  .nav--nojs .header-list {
+    display: block;
+  }
+
+  .nav--nojs .nav__wrapper {
+    position: static;
+    min-height: 0;
   }
 }
 
@@ -53,8 +70,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 2px;
+    display: block;
+    top: 10px;
+    left: -3px;
     width: 25px;
     height: 1.5px;
     background-color: rgba(0, 0, 0, 1);
@@ -71,7 +89,7 @@
 
   &:active::before,
   &:active::after {
-    background-color: opacify(rgba(0, 0, 0, 1), 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 

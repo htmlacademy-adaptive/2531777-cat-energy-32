@@ -1,14 +1,12 @@
 .copyright {
-
+  text-decoration: none;
 }
 
 .copyright__title {
+  @include text-primary ($primary-font , 16px, 20px, $primary-font-weight, rgba(68, 68, 68, 1), none);
   display: block;
-  mask-image: url("../../icons/stack.svg#HTML_Academy-text");
-  background-color: rgba(68, 68, 68, 1);
   width: 113px;
   height: 20px;
-
 
   &:hover {
     background-color: rgba(104, 183, 56, 1);
@@ -18,7 +16,6 @@
     background-color: rgba(104, 183, 56, 1);
     opacity: 30%;
   }
-
 }
 
 .copyright__logo {
@@ -37,6 +34,5 @@
     background-color: rgba(104, 183, 56, 1);
     opacity: 30%;
   }
-
 }
 
