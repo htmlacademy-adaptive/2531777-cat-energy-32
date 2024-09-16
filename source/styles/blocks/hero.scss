@@ -23,12 +23,17 @@
     height: 100%;
     background-color: rgba(104, 183, 56, 0.85);
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
   }
 
 
   @media (min-width: $tablet-width) {
-    background-color: transparent;
     height: 650px;
+    background-color: transparent;
+    background-image: none;
   }
 }
 
@@ -59,7 +64,6 @@
     text-align: left;
     margin-left: 150px;
     margin-top: 40px;
-    position: relative;
   }
 }
 
@@ -70,8 +74,8 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
-    margin-top: 21px;
+    margin: 0;
+    padding: 0;
     text-align: center;
   }
 }
@@ -97,7 +101,7 @@
     height: 54px;
     display: block;
     position: absolute;
-    top: 260px;
-    left: 130px;
+    top: 320px;
+    left: 50px;
   }
 }

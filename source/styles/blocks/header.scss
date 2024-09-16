@@ -1,7 +1,6 @@
 .header {
   @include flex;
   background-color: #ffffff;
-  position: relative;
 }
 
 .header__logo {
@@ -37,6 +36,7 @@
 
   @media (min-width: $tablet-width) {
     @include text-primary ($secondary-font, 18px, 24px, $primary-font, rgba(0, 0, 0, 1), uppercase);
+    @include flex ($direction:row,$justify:space-between,$align:center);
     text-decoration: none;
     width: 436px;
     height: 36px;

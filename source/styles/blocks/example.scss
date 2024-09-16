@@ -60,9 +60,28 @@
 .example__costs {
   margin-top: 20px;
   text-align: center;
+}
 
+.example__slider {
+  padding: 0 20px;
+  width: 280px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 256px;
+  position: relative;
 }
 
 .example__content {
-
 }
+
+.example__button {
+  display: block;
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: rgba(102, 102, 102, 1);
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
