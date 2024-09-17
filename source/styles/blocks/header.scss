@@ -1,6 +1,8 @@
 .header {
   @include flex;
   background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 320px;
 }
 
 .header__logo {

@@ -1,5 +1,6 @@
 .nav {
   width: auto;
+  position: relative;
 }
 
 .nav__toggle {
@@ -8,7 +9,6 @@
   background-color: rgba(255, 255, 255, 1);
   background-repeat: no-repeat;
   border-color: transparent;
-  position: absolute;
   left: 275px;
   top: 20px;
   cursor: pointer;

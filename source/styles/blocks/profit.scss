@@ -11,9 +11,9 @@
   height: 266px;
   margin: 0 20px;
   display: grid;
-  grid-template-rows: 1fr 90px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 100px 1fr;
-  gap: 10px 0;
+  gap: 0 0;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -22,7 +22,7 @@
     display: grid;
     grid-template-rows: 1fr 96px 1fr;
     grid-template-columns: repeat(2, 354px);
-    gap: 24px;
+    gap: 0;
   }
 }
 
@@ -77,8 +77,9 @@
   color: rgba(68, 68, 68, 1);
   grid-row: 2/3;
   grid-column: 1/-1;
-  padding: 0 20px;
+  padding: 22px 33px 23px 20px;
   margin: 0;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
 
   @media (min-width: $tablet-width) {
     @include text-primary ($primary-font, 16px, 24px, 400,rgba(0, 0, 0, 1), none);
@@ -96,9 +97,13 @@
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
   position: relative;
+  width: 139px;
+  height: 24px;
+  padding-left: 20px;
+  margin-top: 15px;
 
 
-  &::after {
+  /* &::after {
     content: "";
     display: block;
     position: absolute;
@@ -107,14 +112,13 @@
     background-color: rgba(217, 217, 217, 1);
     left: 20px;
     top: -15px;
-  }
+  } */
 
   @media (min-width: $tablet-width) {
     @include text-primary ($secondary-font, 20px, 29.6px, 400,rgba(0, 0, 0, 1), uppercase);
     grid-column: 1/2;
     padding: 0 0 0 52px;
     margin: 24px 0 57px;
-
   }
 }
 
