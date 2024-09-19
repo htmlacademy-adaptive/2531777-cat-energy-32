@@ -3,10 +3,14 @@
   background-color: #ffffff;
   margin: 0 auto;
   max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
 }
 
 .header__logo {
-  margin: 13px 21px 15px 20px;
+  margin: 13px 0 15px 20px;
   height: 38px;
 
   @media (min-width: $tablet-width) {
@@ -37,11 +41,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include text-primary ($secondary-font, 18px, 24px, $primary-font, rgba(0, 0, 0, 1), uppercase);
-    @include flex ($direction:row,$justify:space-between,$align:center);
-    text-decoration: none;
-    width: 436px;
-    height: 36px;
+    & a {
+      @include text-primary ($secondary-font, 18px, 24px, $primary-font, rgba(0, 0, 0, 1), uppercase);
+      text-decoration: none;
+      width: 436px;
+      height: 36px;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -1,17 +1,33 @@
 .example {
   background-color: rgba(234, 234, 234, 1);
+
+  @media (min-width: $tablet-width) {
+    background-color: rgba(255, 255, 255, 1);
+  }
 }
 
 .example__title {
   @include text-primary ($secondary-font, 36px, 40px, $primary-font-weight, rgba(0, 0, 0, 1), none);
   text-align: center;
-  margin: 20px;
+
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include text-primary ($secondary-font, 60px, 60px, $primary-font-weight, rgba(0, 0, 0, 1), none);
+    text-align: left;
+    margin: 30px;
+  }
 }
 
 .example__description {
   @include text-primary ($primary-font, 14px, 18px, $primary-font-weight, rgba(68, 68, 68, 1), none);
   margin: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include text-primary ($primary-font, 16px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
+    text-align: left;
+    margin: 30px;
+  }
 }
 
 .example__list {
@@ -20,7 +36,12 @@
   list-style: none;
   padding: 0;
   justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
+
 
 .example__item {
   display: flex;
@@ -45,6 +66,14 @@
   margin-top: 14px;
   margin-bottom: 15px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  br {
+    display: none;
+  }
 }
 
 .example__result {
@@ -55,6 +84,14 @@
   margin-right: 19px;
   background-color: rgba(234, 234, 234, 1);
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  br {
+    display: none;
+  }
 }
 
 .example__costs {
@@ -67,18 +104,31 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .example__slider__fat {
-  padding: 0 20px;
+  position: absolute;
   width: 140px;
+  left: 20px;
   overflow: hidden;
 }
 
 .example__slider__slim {
-  padding: 0 20px;
+  position: absolute;
   width: 140px;
+  left: 162px;
   overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .example__content {
@@ -95,6 +145,7 @@
   padding: 0;
   margin: 0;
   position: relative;
+  z-index: 1;
 
   &::before {
     content: "";

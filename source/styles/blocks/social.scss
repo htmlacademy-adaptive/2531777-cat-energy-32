@@ -20,6 +20,17 @@
     height: 2px;
     background-color: rgba(217, 217, 217, 1);
   }
+
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .social__item {

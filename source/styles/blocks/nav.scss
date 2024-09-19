@@ -1,6 +1,11 @@
 .nav {
   width: auto;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+   display: flex;
+   flex-direction: row;
+  }
 }
 
 .nav__toggle {
@@ -14,6 +19,7 @@
   cursor: pointer;
   width: 24px;
   height: 24px;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -45,7 +51,7 @@
 
   .nav--opened .nav__wrapper {
     position: absolute;
-    top: 66;
+    top: 45;
     right: 0;
     z-index: 10;
     background-color: rgba(255, 255, 255, 1);
