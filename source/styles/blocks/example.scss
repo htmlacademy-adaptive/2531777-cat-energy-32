@@ -133,6 +133,8 @@
 
 .example__content {
   width: 280px;
+  height: auto;
+  object-fit: contain;
 }
 
 .example__button {
