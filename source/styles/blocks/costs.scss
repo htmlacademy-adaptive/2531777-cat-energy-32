@@ -4,4 +4,19 @@
 
 .costs__sum {
   @include text-primary ($secondary-font, 14px, 20px, $primary-font-weight,  rgba(17, 17, 17, 1), uppercase);
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include text-primary ($secondary-font, 20px, 20px, $primary-font-weight,  rgba(17, 17, 17, 1), uppercase);
+    width: 174px;
+    height: auto;
+    text-align: left;
+
+    br {
+      display: block;
+    }
+  }
 }

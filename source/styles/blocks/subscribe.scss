@@ -1,12 +1,17 @@
 .subscribe {
-  width: 320px;
+  width: 100%;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscribe__title {
   @include text-primary ($secondary-font, 24px, 24px, $primary-font-weight, rgba(0, 0, 0, 1), none);
   margin-top: 40px;
   position: relative;
+  text-align: left;
+  width: 152px;
 
   &::before {
     content: "";
